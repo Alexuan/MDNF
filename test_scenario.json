@@ -58,7 +58,7 @@
         },
         "weights_file": null,
         "wrapper_kwargs": {
-            "local_weights_file": "/work_new/asreeram/models/30-70-clean-melgan-WGN-ftASR.ckpt",
+            "local_weights_file": "checkpoints/30-70-ASR_weights.ckpt",
             "clip_values": [
                 -1,
                 1
