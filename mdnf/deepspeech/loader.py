@@ -6,6 +6,7 @@ Model contributed by: MITRE Corporation
 from typing import Optional
 
 from mdnf.deepspeech.pytorch_deepspeech import PyTorchDeepSpeech
+from mdnf.deepspeech.pytorch_deepspeech_sep import PyTorchDeepSpeechSep
 
 from armory.utils.external_repo import ExternalRepoImport
 
@@ -21,4 +22,5 @@ def get_deepspeech_model(
     model_kwargs: dict, wrapper_kwargs: dict, weights_path: Optional[str] = None
 ) -> PyTorchDeepSpeech:
 
-    return PyTorchDeepSpeech(**wrapper_kwargs)
+    # NOTE(Xuan): change 'PyTorchDeepSpeech' -> 'PyTorchDeepSpeechSep'
+    return PyTorchDeepSpeechSep(**wrapper_kwargs)

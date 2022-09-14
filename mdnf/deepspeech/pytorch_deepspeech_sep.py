@@ -44,7 +44,7 @@ if TYPE_CHECKING:
 logger = logging.getLogger(__name__)
 
 
-class PyTorchDeepSpeech(PytorchSpeechRecognizerMixin, SpeechRecognizerMixin, PyTorchEstimator):
+class PyTorchDeepSpeechSep(PytorchSpeechRecognizerMixin, SpeechRecognizerMixin, PyTorchEstimator):
     """
     This class implements a model-specific automatic speech recognizer using the end-to-end speech recognizer
     DeepSpeech and PyTorch. It supports both version 2 and version 3 of DeepSpeech models as released at
